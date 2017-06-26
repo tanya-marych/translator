@@ -1,0 +1,15 @@
+{
+  "name": "trantlator",
+  "version": "1.0.0",
+  "description": "new language for simple operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanya Marych",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}

@@ -1,0 +1,42 @@
+body{
+    position: relative;
+    font-size: 12px;
+}
+
+textarea{
+    display: inline-block;
+    width: 32%;
+    height: 400px;
+    resize: none;
+}
+
+#source{
+    width: 500px;
+    height: 550px;
+    resize: none;
+    overflow: auto;
+    /*font: 14px Arial;*/
+}
+
+#create{
+    display: block;
+}
+
+#table{
+    display: block;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+    border: 1px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+}
+
+tbody,tr,th{
+  border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 5px;
+}

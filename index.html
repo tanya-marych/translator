@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Транслятори</title>
+        <link href="css/style.css" rel="stylesheet" >
+        <script src="https://unpkg.com/react@15/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+        <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h2>Транслятори</h2>
+        <textarea id="inputCode" ></textarea>
+        <textarea id="result" ></textarea>
+        <textarea id="poliz" ></textarea>
+        <input type="submit" id="submit" value="Submit">
+        <div id='lexTable'>
+            <h3>Исходные таблицы</h3>
+        </div>
+        <div>
+            <h3>Таблица вывода</h3>
+            <div id="lexicalRes"></div>
+        </div>
+        <div id="chainAnalysis"></div>
+        <table id="syntaxTable" ></table>
+    </body>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/lexical.js"></script> <!--лексичний аналізатор-->
+    <script src="js/syntaxTable.js"></script> <!--таблиця для синтаксичного аналізатора  -->
+    <script src="js/chainTable.js"></script> <!-- Таблиця відношень -->
+    <script src="js/operatorsPoliz.js"></script><!-- Перетворення в поліз -->
+    <script src="js/toDo.js"></script><!-- Виконання полізу -->
+    <script src="js/index.js"></script> <!--головний файл(точка входу)-->
+</html>
