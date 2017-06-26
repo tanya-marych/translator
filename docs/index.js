@@ -1,19 +1,13 @@
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
-}
+"use strict";
 
-const user = {
-  firstName: 'Harper',
-  lastName: 'Perez'
-};
+var HelloWorld = React.createClass({
 
-const element = (
-  <h1>
-    Hello, {formatName(user)}!
-  </h1>
-);
+  render: function() {
+    return React.createElement("h1", null, "Hello World!");
+  },
 
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+});
+
+var mainElement = document.querySelector("main");
+
+ReactDOM.render(React.createElement(HelloWorld), mainElement);
